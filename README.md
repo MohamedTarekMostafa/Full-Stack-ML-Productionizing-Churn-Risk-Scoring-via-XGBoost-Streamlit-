@@ -17,26 +17,26 @@ The model uses **XGBoost** with **SMOTE** for imbalance handling and is deployed
 ---
 
 ## 📂 Files
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv # Dataset
-├── churn_prediction_model.pkl # Trained model
-├── train_columns.pkl # Column list
-├── app.py # Streamlit app
-├── Churn_Prediction_Colab_Workflow.ipynb # Training notebook
+```bash
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv   # Dataset
+├── churn_prediction_model.pkl             # Trained model
+├── train_columns.pkl                      # Column list
+├── app.py                                 # Streamlit app
+├── Churn_Prediction_Colab_Workflow.ipynb  # Training notebook
 └── README.md
+```
 
 ---
 
 ## ⚙️ Installation
-Install required libraries:
 ```bash
 pip install pandas numpy scikit-learn joblib xgboost imbalanced-learn streamlit pyngrok
-▶️ Run on Colab
+```
 
-Upload WA_Fn-UseC_-Telco-Customer-Churn.csv
+---
 
-Train model & save artifacts (.pkl, app.py)
-
-Deploy app with ngrok:
+## ▶️ Run on Colab
+```python
 from pyngrok import ngrok
 import subprocess, time
 
@@ -44,7 +44,14 @@ ngrok.set_auth_token("YOUR_NGROK_AUTHTOKEN_HERE")
 p = subprocess.Popen(['streamlit', 'run', 'app.py'])
 time.sleep(5)
 print("App URL:", ngrok.connect(8501))
-💡 Insight
-70% Recall = catches 7 out of 10 churners → strong tool for retention campaigns.
-👨‍💻 Author
-Mohamed Tarek
+```
+
+---
+
+## 💡 Insight
+**70% Recall** = catches 7 out of 10 churners → strong tool for retention campaigns.  
+
+---
+
+## 👨‍💻 Author
+**Mohamed Tarek**
