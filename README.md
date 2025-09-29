@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="Deployment_Page.jpg" alt="Deployment Screenshot" width="700">
+</p>
 #  Retention Rocket: Real-Time Churn Prediction (XGBoost & Streamlit)
 
 ## 📌 Overview
