@@ -25,7 +25,7 @@ The model uses **XGBoost** with **SMOTE** for imbalance handling and is deployed
 ├── churn_prediction_model.pkl             # Trained model
 ├── train_columns.pkl                      # Column list
 ├── app.py                                 # Streamlit app
-├── Churn_Prediction_Colab_Workflow.ipynb  # Training notebook
+├── Customer_Churn-Prediction.ipynb  # Training notebook
 └── README.md
 ```
 
